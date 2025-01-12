@@ -35,12 +35,6 @@ body{
     justify-content: center;
 }
 
-/* .uploader:hover{
-    background-color: #5558;
-    color: #eee9;
-    border: 1px solid transparent;
-} */
-
 .photo_container{
     columns: 4;
     justify-content: space-between;
@@ -102,4 +96,28 @@ a:hover{
         color: #ccc9;
         font-size: 1.3rem;
     }    
+}
+
+@media (max-width: 1000px){
+    .photo_container{
+        columns: 3;
+    }
+    footer{
+        font-size: .9rem;
+    }
+    .uploader{
+        width: 40%;
+    }
+}
+
+@media (max-width: 750px){
+    .photo_container{
+        columns: 2;
+    }
+    footer{
+        font-size: .8rem;
+    }
+    .uploader{
+        width: 50%;
+    }
 }
